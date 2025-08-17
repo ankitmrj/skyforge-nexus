@@ -617,43 +617,46 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
         </div>
       </section>
 
-      {/* Join the Team Section */}
-      <section className="py-20 bg-background-secondary">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-foreground">
-              Want to Join Our Team?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We're always looking for passionate individuals who share our vision 
-              for innovation and excellence. Whether you're a beginner or an expert, 
-              there's a place for you in our diverse team.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-neon px-8 py-4 rounded-lg font-semibold"
-              >
-                Apply Now
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-secondary-neon px-8 py-4 rounded-lg font-semibold"
-              >
-                Learn More
-              </motion.button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+
+{/* Join the Team Section */}
+<section className="py-20 bg-gradient-to-r from-background via-background-secondary to-background">
+  <div className="container mx-auto px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center max-w-3xl mx-auto"
+    >
+      {/* Heading */}
+      <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-foreground">
+        🚀 Want to Join Our Team?
+      </h2>
+
+      {/* Subheading */}
+      <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
+        We're always looking for passionate innovators who share our vision for 
+        <span className="text-primary font-semibold"> technology, creativity, and collaboration</span>.  
+        Whether you’re a beginner or an expert, there’s a place for you in our diverse team.
+      </p>
+
+      {/* CTA Button with LinkedIn */}
+      <motion.a
+        href="https://www.linkedin.com/company/drone-iot-club-mmmut"
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="group btn-neon px-10 py-4 rounded-lg font-semibold inline-flex items-center gap-2 text-lg tracking-wide shadow-md hover:shadow-xl transition-all"
+      >
+        Learn More
+        {/* LinkedIn icon (hidden by default, appears on hover) */}
+        <Linkedin className="w-5 h-5 opacity-0 translate-x-[-8px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+      </motion.a>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Team Stats */}
       <section className="py-20 bg-background">
