@@ -634,11 +634,16 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
       </h2>
 
       {/* Subheading */}
-      <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
-        We're always looking for passionate innovators who share our vision for 
-        <span className="text-primary font-semibold"> technology, creativity, and collaboration</span>.  
-        Whether you’re a beginner or an expert, there’s a place for you in our diverse team.
-      </p>
+<p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
+  The Drone & IoT Club is a space to explore 
+  <span className="text-primary font-semibold"> emerging technologies, creative ideas, and teamwork</span>.  
+  Together, we learn, experiment, and bring visions to life.
+</p>
+
+<p className="text-md md:text-lg text-muted-foreground">
+  To learn more, <a href="/about" className="text-primary font-semibold hover:underline">click here</a>.
+</p>
+
 
       {/* CTA Button with LinkedIn */}
       <motion.a
