@@ -11,6 +11,9 @@ import Events from "./pages/Events";
 import Teams from "./pages/Teams";
 import NotFound from "./pages/NotFound";
 
+// 👇 import ScrollToTop
+import ScrollToTop from "./ScrollToTop";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -19,6 +22,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        {/* 👇 Add it here */}
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />

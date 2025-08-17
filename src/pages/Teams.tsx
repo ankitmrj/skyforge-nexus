@@ -1,6 +1,7 @@
 'use client';
 
 // Importing required libraries and components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Mousewheel, Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -428,8 +429,7 @@ const MemberCard = (member: { name: string; position?: string; branch?: string; 
               Our Team
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Meet the passionate individuals who drive innovation and excellence 
-              in drone technology and IoT systems.
+Meet the visionaries behind our Club — driven by curiosity, innovation, and a passion for shaping the future of smart technologies
             </p>
           </motion.div>
         </div>
