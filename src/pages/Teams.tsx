@@ -1,83 +1,417 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Card, CardContent } from '@/components/ui/card';
-import { Linkedin } from 'lucide-react';
+'use client';
+
+// Importing required libraries and components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Mousewheel, Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Linkedin } from "lucide-react";
 
 const Teams = () => {
-  const teamMembers = [
+  const final_year = [
     {
-      name: 'Alex Rodriguez',
-      position: 'Club President',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+      name: 'Vijit Bhadana',
+      position: 'President',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/VijitBhadana.png',
       linkedin: 'https://linkedin.com/in/alexrodriguez',
     },
     {
-      name: 'Sarah Chen',
-      position: 'Technical Lead',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b1c0?w=400&h=400&fit=crop&crop=face',
+      name: 'Ujjwal Kumar',
+      position: 'Vice-President',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/UjjwalKumar.png',
       linkedin: 'https://linkedin.com/in/sarahchen',
     },
     {
-      name: 'Marcus Johnson',
-      position: 'Drone Operations Manager',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+      name: 'Ayush Kannojia',
+      position: 'Vice-President',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/AyushKannojia.jpeg',
       linkedin: 'https://linkedin.com/in/marcusjohnson',
     },
     {
-      name: 'Emily Zhang',
-      position: 'IoT Systems Coordinator',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
+      name: 'Devesh Yadav',
+      position: 'Vice-President',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/DeveshYadav.jpg',
       linkedin: 'https://linkedin.com/in/emilyzhang',
     },
     {
-      name: 'David Kumar',
-      position: 'Hardware Team Lead',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face',
+      name: 'Utkarsh Kumar',
+      position: 'Treauserer',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/UtkarshKumar.jpg',
       linkedin: 'https://linkedin.com/in/davidkumar',
     },
     {
-      name: 'Lisa Thompson',
-      position: 'Software Development Lead',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face',
+      name: 'Vishal Singh',
+      position: 'Treauserer',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/VishalSingh.png',
       linkedin: 'https://linkedin.com/in/lisathompson',
     },
     {
-      name: 'Ryan Patel',
-      position: 'Competition Team Captain',
-      image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=400&fit=crop&crop=face',
+      name: 'Khushi Dubey',
+      position: 'Social Media Head',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/KhushiDubey.png',
       linkedin: 'https://linkedin.com/in/ryanpatel',
     },
     {
-      name: 'Ava Martinez',
-      position: 'Research & Development',
-      image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop&crop=face',
+      name: 'Himanshu Patwa',
+      position: 'Social Media Head',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/HimanshuPatwa.jpg',
       linkedin: 'https://linkedin.com/in/avamartinez',
     },
     {
-      name: 'James Wilson',
-      position: 'Safety Officer',
-      image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=face',
+      name: 'Shreya Pandey',
+      position: 'Sponsorship Head',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/ShreyaPandey.png',
       linkedin: 'https://linkedin.com/in/jameswilson',
     },
     {
-      name: 'Sophia Lee',
-      position: 'Events Coordinator',
-      image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=face',
+      name: 'Amisha',
+      position: 'Event Head',
+      branch:'Electronics and Communication Engineering',
+      image: '/final-year/Amisha.png',
       linkedin: 'https://linkedin.com/in/sophialee',
+    },];
+  const third_year=[   {
+    name: 'Vaishnavi Khare',
+      position: 'Secretary',
+    branch:'Electronics and Communication Engineering',
+      image: '/third-year/VaishnaviKhare.jpg',
+      linkedin: '',
     },
     {
-      name: 'Daniel Brown',
-      position: 'Documentation Manager',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face',
-      linkedin: 'https://linkedin.com/in/danielbrown',
+      name: 'Priyanshu Kashyap',
+      position: 'Joint Secretary',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/PriyanshuKashyap.jpg',
+      linkedin: '',
     },
     {
-      name: 'Maya Singh',
-      position: 'Community Outreach',
-      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face',
-      linkedin: 'https://linkedin.com/in/mayasingh',
+      name: 'Aman Jaiswal',
+      position: 'Joint Secretary',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/AmanJaiswal.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Pranjal Mishra',
+      position: 'Finance Secretary',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/PranjalMishra.png',
+      linkedin: '',
+    },
+    {
+      name: 'Paras Varshrey',
+      position: 'Finance Secretary',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/ParasVarshney.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Abhishek Shakya',
+      position: 'Event Coordination',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/AbhishekShakya.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Tanmay Tripathi',
+      position: 'Event Coordination',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/TanmayTripathi.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Tejaswi',
+      position: 'Lead Graphics',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/Tejaswi.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Akash Chaturvedi',
+      position: 'Lead Multirotor',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/AkashChaturvedi.png',
+      linkedin: '',
+    },
+    {
+      name: 'Akarsh Tiwari',
+      position: 'Lead Fixed Wing/AI',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/AkarshTiwari.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Rajneesh Yadav',
+      position: 'Lead Robotics',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/RajneeshYadav.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Divyanshi Sonkar',
+      position: 'Lead Publicity',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/DivyanshiSonkar.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Vishu Srivastava',
+      position: 'Lead Team IoT',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/VishuSrivastava.png',
+      linkedin: '',
+    },
+    {
+      name: 'Ashish Pathak',
+      position: 'Lead Sponsorship',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/AshishPathak.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Sonu Chaudhary',
+      position: 'Lead Editorial',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/SonuChaudhary.jpg',
+      linkedin: '',
+    },
+     {
+      name: 'Ankit Srivastav',
+      position: 'Lead Web Development',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/AnkitSrivastav.JPG',
+      linkedin: '',
+    },
+    {
+      name: 'Shivansh Singh',
+      position: 'Co-Lead Fixed Wing',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/ShivanshSingh.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Shreyansh Singh Sengar',
+      position: 'Co-Lead Fixed Wing',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/ShreyanshSinghSengar.jpeg',
+      linkedin: '',
+    },
+    {
+      name: 'Ayush Shukla',
+      position: 'Co-Lead IoT',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/AyushShukla.jpg',
+      linkedin: '',
+    },
+     {
+      name: 'Shristi Dixit',
+      position: 'Co-Lead web Dev',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/ShristiDixit.jpg',
+      linkedin: '',
+    },
+    {
+      name: 'Anshika Kumari',
+      position: 'Co-Lead Web Dev',
+      branch:'Electronics and Communication Engineering',
+      image: '/third-year/Anshika.jpg',
+      linkedin: '',
     },
   ];
+
+const second_year=[   {
+  name: 'Aditya Tiwari',
+      image: 'second-year/Aditya.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/aditya-tiwari-5601172b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Akshat Mishra',
+      image: 'second-year/Akshat2.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/akshat-mishra-b65a09264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Bhavya Agarwal',
+      image: 'second-year/Bhavya.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/bhavya-agrawal-46b8312b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Pari Singh',
+      image: 'second-year/Pari.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/pari-singh-46770a329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Sanya Chaudhary',
+      image: 'second-year/Shanya.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://in.linkedin.com/in/sanya-chaudhary-a78070331',
+    },
+    {
+      name: 'Utkrisht Srivastava',
+      image: 'second-year/Utkrisht.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/utkrisht099/',
+    },
+    {
+      name: 'Shreya Rawat',
+      image: 'second-year/ShreyaRawat.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/shreya-rawat-801891310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Mradul Singh',
+      image: 'second-year/Mradul.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/mradulsingh09',
+    },
+    {
+      name: 'Rasshi Ashish Srivastav',
+      image: 'second-year/Rasshi2.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/rasshi-ashish-srivastav-055a812a1',
+    },
+    {
+      name: 'Alok Kumar',
+      image: 'second-year/Alok.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/alok-kumar-5a6141303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Shreya Srivastava',
+      image: 'second-year/Shreya.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/shreya-srivastava-7569a9285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Ayushi Verma',
+      image: 'second-year/Ayushi.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/ayushi-verma-95a6a933b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Adarsh Tripathi',
+      image: 'second-year/Adarsh.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/adarsh-tripathi-2b310429a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Divyansh Singh',
+      image: 'second-year/Divyansh.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/divyansh-singh-527151370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Chandramauli Patel',
+      image: 'second-year/CM.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/chandramauli-patel-261436327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+     {
+      name: 'Manas Manish',
+      image: 'second-year/Manas.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: '',
+    },
+    {
+      name: 'Saurabh Kumar',
+      image: 'second-year/Saurabh.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/saurabh-kumar-5139b5314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Ayush Kumar Chaubey',
+      image: 'second-year/Ayush.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/ayush-kumar-chaubey-561a942b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+      name: 'Mansi Patel',
+      image: 'second-year/Mansi.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/mansi-patel-856644331',
+    },
+    {
+      name: 'Anjali Singh',
+      image: 'second-year/Anjali.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/anjali-singh-993b3630b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+     {
+      name: 'Abhishek Tiwari',
+      image: 'second-year/Abhishek.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/abhishek-tiwari-2500b2349',
+    },
+    {
+      name: 'Nyasi',
+      image: 'second-year/Nyasi.jpg',
+      branch:'Electronics and Communication Engineering',
+      linkedin: 'https://www.linkedin.com/in/nyasi-b365b0327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+  ];
+
+  // Reusable slide card (same markup as pehle)
+const MemberCard = (member: { name: string; position?: string; branch?: string; image: string; linkedin: string }) => (
+  <Card className="bg-card border-border card-hover overflow-hidden group relative">
+    <div className="relative overflow-hidden">
+      <img
+        src={member.image}
+        alt={member.name}
+        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+
+      {/* Subtle Blue Overlay (lighter + professional) */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+      {/* LinkedIn Icon */}
+      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[-10px] group-hover:translate-y-0">
+        <a
+          href={member.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors"
+        >
+          <Linkedin className="h-5 w-5 text-primary-foreground" />
+        </a>
+      </div>
+
+      {/* Branch Info: slide-in left → right
+      <div className="absolute bottom-0 left-0 right-0 -translate-x-full group-hover:translate-x-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-blue-600/70 text-white p-3 text-sm">
+        {member.branch}
+      </div>*/}
+    </div> 
+
+    {/* Content */}
+    <CardContent className="p-6 text-center">
+      <h3 className="text-xl font-display font-semibold mb-1 text-foreground">
+        {member.name}
+      </h3>
+      {member.position && (
+        <p className="text-primary text-sm font-medium mb-1">
+          {member.position}
+        </p>
+      )}
+    </CardContent>
+  </Card>
+);
+
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -100,53 +434,186 @@ const Teams = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* Team Grid */}
+      
+ {/* ---------- FINAL YEAR ---------- */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => (
+          <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
+            Final Year
+          </h2>
+
+          {/* 👉 Mobile & Tablet → Slider */}
+          <div className="lg:hidden">
+            <Swiper
+  modules={[FreeMode, Mousewheel, Navigation]}
+  navigation={{
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }}
+  freeMode={{
+    enabled: true,
+    momentum: true,
+    momentumRatio: 0.45,
+    momentumVelocityRatio: 0.9,
+    minimumVelocity: 0.02,
+    sticky: false,
+  }}
+  mousewheel={{
+    forceToAxis: true,
+    releaseOnEdges: true,
+    sensitivity: 0.6,
+  }}
+  grabCursor={true}
+  spaceBetween={20}
+  slidesPerView={1.2}   // 👈 mobile ke liye by default
+  breakpoints={{
+    480: { slidesPerView: 1.5 }, // thoda bada mobile
+    640: { slidesPerView: 2 },   // tablet
+    1024: { slidesPerView: 3 },  // desktop
+    1280: { slidesPerView: 4 },  // large desktop
+  }}
+>
+
+              {final_year.map((member, index) => (
+                <SwiperSlide key={`final-${index}`}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                  >
+                    {MemberCard(member)}
+                  </motion.div>
+                </SwiperSlide>
+              ))}
+              {/* navigation buttons */}
+              <div className="swiper-button-prev"></div>
+              <div className="swiper-button-next"></div>
+            </Swiper>
+          </div>
+
+          {/* 👉 Large screens → 5×2 grid */}
+          <div className="hidden lg:grid grid-cols-5 gap-6">
+            {final_year.map((member, index) => (
               <motion.div
-                key={index}
+                key={`final-grid-${index}`}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.05 }}
                 viewport={{ once: true }}
               >
-                <Card className="bg-card border-border card-hover overflow-hidden group">
-                  <div className="relative">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                    
-                    {/* LinkedIn Icon */}
-                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <a
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-glow transition-colors"
-                      >
-                        <Linkedin className="h-5 w-5 text-primary-foreground" />
-                      </a>
-                    </div>
-                  </div>
-
-                  <CardContent className="p-6 text-center">
-                    <h3 className="text-xl font-display font-semibold mb-2 text-foreground">
-                      {member.name}
-                    </h3>
-                    <p className="text-primary text-sm font-medium">
-                      {member.position}
-                    </p>
-                  </CardContent>
-                </Card>
+                {MemberCard(member)}
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ---------- THIRD YEAR ---------- */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
+            Pre-Final Year
+          </h2>
+          <Swiper
+  modules={[FreeMode, Mousewheel, Navigation]}
+  navigation={{
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }}
+  freeMode={{
+    enabled: true,
+    momentum: true,
+    momentumRatio: 0.45,
+    momentumVelocityRatio: 0.9,
+    minimumVelocity: 0.02,
+    sticky: false,
+  }}
+  mousewheel={{
+    forceToAxis: true,
+    releaseOnEdges: true,
+    sensitivity: 0.6,
+  }}
+  grabCursor={true}
+  spaceBetween={20}
+  slidesPerView={1.2}   // 👈 mobile ke liye by default
+  breakpoints={{
+    480: { slidesPerView: 1.5 }, // thoda bada mobile
+    640: { slidesPerView: 2 },   // tablet
+    1024: { slidesPerView: 3 },  // desktop
+    1280: { slidesPerView: 4 },  // large desktop
+  }}
+>
+
+            {third_year.map((member, index) => (
+              <SwiperSlide key={`third-${index}`}>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                >
+                  {MemberCard(member)}
+                </motion.div>
+              </SwiperSlide>
+            ))}
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
+          </Swiper>
+        </div>
+      </section>
+
+      {/* ---------- SECOND YEAR ---------- */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
+            Second Year – Executive Members
+          </h2>
+          <Swiper
+  modules={[FreeMode, Mousewheel, Navigation]}
+  navigation={{
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }}
+  freeMode={{
+    enabled: true,
+    momentum: true,
+    momentumRatio: 0.45,
+    momentumVelocityRatio: 0.9,
+    minimumVelocity: 0.02,
+    sticky: false,
+  }}
+  mousewheel={{
+    forceToAxis: true,
+    releaseOnEdges: true,
+    sensitivity: 0.6,
+  }}
+  grabCursor={true}
+  spaceBetween={20}
+  slidesPerView={1.2}   // 👈 mobile ke liye by default
+  breakpoints={{
+    480: { slidesPerView: 1.5 }, // thoda bada mobile
+    640: { slidesPerView: 2 },   // tablet
+    1024: { slidesPerView: 3 },  // desktop
+    1280: { slidesPerView: 4 },  // large desktop
+  }}
+>
+
+            {second_year.map((member, index) => (
+              <SwiperSlide key={`second-${index}`}>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                >
+                  {MemberCard(member)}
+                </motion.div>
+              </SwiperSlide>
+            ))}
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
+          </Swiper>
         </div>
       </section>
 
