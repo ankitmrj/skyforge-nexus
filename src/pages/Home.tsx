@@ -116,9 +116,9 @@ const Home = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-7xl mx-auto"
+          className="max-w-4xl mx-auto"
         >
-          <div className="w-full h-[600px] bg-background-secondary rounded-xl overflow-hidden">
+          <div className="w-full h-[400px] bg-background-secondary rounded-xl overflow-hidden">
             <DroneModel3D />
           </div>
         </motion.div>
