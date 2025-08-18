@@ -27,27 +27,27 @@ const Events = () => {
   const events = [
     {
       title: 'SwiftWings 2025',
-      date: 'March 15-17, 2025',
+      date: 'Coming Soon',
       location: 'Main Campus',
       description: 'Annual drone competition featuring transformer theme with multiple categories and exciting challenges.',
       status: 'Registration Open',
-      registrationDeadline: 'February 28, 2025',
+      registrationDeadline: '---',
     },
     {
       title: 'IoT Workshop Series',
-      date: 'February 20, 2025',
+      date: 'Coming soon',
       location: 'Tech Lab A',
       description: 'Hands-on workshop covering IoT fundamentals, sensor integration, and data analytics.',
       status: 'Coming Soon',
-      registrationDeadline: 'February 15, 2025',
+      registrationDeadline: '---',
     },
     {
       title: 'Drone Photography Contest',
-      date: 'January 25, 2025',
+      date: 'Coming soon',
       location: 'Campus Grounds',
       description: 'Showcase your aerial photography skills in this exciting competition.',
       status: 'Registration Closed',
-      registrationDeadline: 'January 20, 2025',
+      registrationDeadline: '---',
     },
   ];
 

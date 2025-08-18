@@ -14,7 +14,7 @@ const About = () => {
     {
       icon: Target,
       title: 'Our Mission',
-      content: 'To foster innovation in drone technology and IoT systems, providing students with hands-on experience in cutting-edge technologies. We aim to bridge the gap between theoretical knowledge and practical application through engaging projects and collaborative learning.',
+      content: 'To provide a hands-on platform for learning and innovation in Drones, IoT, Embedded Systems, AI, and ML, sparking curiosity and fostering practical skills. We aim to create a collaborative environment where members share ideas, work on real-world projects, and turn innovation into impact.'
     },
     {
       icon: Eye,
@@ -38,7 +38,7 @@ const About = () => {
               About Our Club
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Learn about our journey, mission, and the vision that drives us to push 
+              Learn about our journey, mission, and the vision that drives us to push
               the boundaries of drone technology and IoT innovation.
             </p>
           </motion.div>
@@ -113,15 +113,15 @@ const About = () => {
                     alt="Drone Operations"
                     className="w-full h-64 md:h-96 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-primary opacity-10" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-2xl font-display font-bold text-white mb-2">
-                      Advanced Drone Operations
-                    </h3>
-                    <p className="text-white/90">
-                      Our team conducting precision flight tests and data collection missions.
-                    </p>
-                  </div>
+                  <div className="absolute inset-0" />
+                </div>
+                <div className="px-6 py-4 ">
+                  <h3 className="text-2xl font-display font-bold text-white mb-2">
+                    Advanced Drone Operations
+                  </h3>
+                  <p className="text-white/90">
+                    Our team conducting precision flight tests and data collection missions.
+                  </p>
                 </div>
               </Card>
             </div>
@@ -132,7 +132,7 @@ const About = () => {
                 { number: '150+', label: 'Active Members' },
                 { number: '25+', label: 'Projects Completed' },
                 { number: '10+', label: 'Competitions Won' },
-                { number: '5', label: 'Years of Excellence' },
+                { number: '6', label: 'Years of Excellence' },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -170,8 +170,7 @@ const About = () => {
               Ready to Join Our Mission?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Whether you're a beginner interested in learning or an experienced 
-              developer ready to innovate, there's a place for you in our club.
+              Whether you’re just starting out or an experienced developer eager to innovate, our club welcomes you to explore, create, and grow with us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
