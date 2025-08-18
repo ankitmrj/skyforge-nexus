@@ -19,7 +19,7 @@ const Teams = () => {
       position: 'President',
       branch:'Electronics and Communication Engineering',
       image: '/final-year/VijitBhadana.png',
-      linkedin: '',
+      linkedin: '#',
     },
     {
       name: 'Ujjwal Kumar',
@@ -82,7 +82,7 @@ const Teams = () => {
       position: 'Event Head',
       branch:'Electronics and Communication Engineering',
       image: '/final-year/Amisha.png',
-      linkedin: '',
+      linkedin: '#',
     },];
   const third_year=[   {
     name: 'Vaishnavi Khare',
@@ -131,14 +131,14 @@ const Teams = () => {
       position: 'Event Coordination',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/TanmayTripathi.jpg',
-      linkedin: '',
+      linkedin: '#',
     },
     {
       name: 'Tejaswi',
       position: 'Lead Graphics',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/Tejaswi.jpg',
-      linkedin: '',
+      linkedin: '#',
     },
     {
       name: 'Akash Chaturvedi',
@@ -180,28 +180,28 @@ const Teams = () => {
       position: 'Lead Sponsorship',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/AshishPathak.jpg',
-      linkedin: '',
+      linkedin: '#',
     },
     {
       name: 'Sonu Chaudhary',
       position: 'Lead Editorial',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/SonuChaudhary.jpg',
-      linkedin: '',
+      linkedin: '#',
     },
      {
       name: 'Ankit Srivastav',
       position: 'Lead Web Development',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/AnkitSrivastav.JPG',
-      linkedin: '',
+      linkedin: '#',
     },
     {
       name: 'Shivansh Singh',
       position: 'Co-Lead Fixed Wing',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/ShivanshSingh.jpg',
-      linkedin: '',
+      linkedin: '#',
     },
     {
       name: 'Shreyansh Singh Sengar',
@@ -215,7 +215,7 @@ const Teams = () => {
       position: 'Co-Lead IoT',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/AyushShukla.jpg',
-      linkedin: '',
+      linkedin: '#',
     },
      {
       name: 'Shristi Dixit',
@@ -229,7 +229,7 @@ const Teams = () => {
       position: 'Co-Lead Web Dev',
       branch:'Electronics and Communication Engineering',
       image: '/third-year/Anshika.jpg',
-      linkedin: '',
+      linkedin: '#',
     },
   ];
 
