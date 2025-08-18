@@ -246,7 +246,7 @@ const second_year=[   {
       linkedin: 'https://www.linkedin.com/in/akshat-mishra-b65a09264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
-      name: 'Bhavya Agarwal',
+      name: 'Bhavya Agarawal',
       image: 'second-year/Bhavya.jpg',
       branch:'Electronics and Communication Engineering',
       linkedin: 'https://www.linkedin.com/in/bhavya-agrawal-46b8312b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
