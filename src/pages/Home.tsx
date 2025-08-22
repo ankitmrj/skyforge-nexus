@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import DroneModel3D from '@/components/DroneModel3D';
-import { ArrowRight, Plane, Settings, Printer } from 'lucide-react';
+import { ArrowRight, Plane, Settings, Printer, Network,Bot, CpuIcon,FanIcon} from 'lucide-react';
 import heroImage from '@/assets/hero-drone.jpg';
 import facultyImage from '@/assets/faculty-advisor.jpg';
 
@@ -18,9 +18,17 @@ const Home = () => {
 
   const workAreas = [
     {
-      icon: Plane,
+      icon:FanIcon,
       title: 'Multirotor Drones',
       description: 'Design and build advanced quadcopter and hexacopter drones with cutting-edge flight control systems.',
+    }, {
+      icon: Bot,
+      title: 'AI WORKSHOP',
+      description: 'Learn AI concepts and robotics integration.Apply AI to real-world drone applications.',
+    }, {
+      icon: Network,
+      title: 'IOT WORKSHOP',
+      description: 'Explore IoT devices and smart systems.Connect drones and sensors seamlessly.',
     },
     {
       icon: Plane,
@@ -32,6 +40,11 @@ const Home = () => {
       title: '3D Printing',
       description: 'Create custom drone components and prototypes using state-of-the-art 3D printing technology.',
     },
+     {
+      icon: CpuIcon,
+      title: 'AND MANY MORE',
+      description: 'Discover exciting projects beyond drones.Innovate with tech, AI, and robotics.',
+    },
   ];
 
   return (
@@ -42,10 +55,10 @@ const Home = () => {
         <div 
           className="absolute inset-0 w-full h-full parallax-bg"
           style={{
-            backgroundImage: `url(${heroImage})`,
+            backgroundImage: url(${heroImage}),
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            transform: `translateY(${scrollY * 0.5}px)`,
+            transform: translateY(${scrollY * 0.5}px),
           }}
         />
         
@@ -92,7 +105,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 3D Drone Model Section */}
+{/* 3D Drone Model Section */}
      <section className="py-20 bg-background-secondary">
       <div className="container mx-auto px-4">
         <motion.div
@@ -192,24 +205,27 @@ const Home = () => {
                       Message from Faculty Advisor
                     </h2>
                     <h3 className="text-xl font-semibold text-primary mb-4">
-                      Dr. Sarah Johnson
+                      Prof. S.K. SONI
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      "The Drone & IoT Club represents the perfect fusion of innovation and 
-                      practical application. Our students are not just learning about technology—they're 
-                      shaping the future of aerial robotics and autonomous systems. Every project 
-                      we undertake pushes the boundaries of what's possible."
+                       "As the Faculty Advisor and Head of the Department of Electronics & Communication Engineering at Madan Mohan Malaviya University of Technology,
+                       I am dedicated to ensuring that our students receive the highest quality education.
+                       Our department is at the forefront of research in Wireless Communication and 5G Networks,
+                       and we strive to impart both theoretical knowledge and practical skills to help students thrive in these rapidly evolving fields.
+                       I take pride in the success of our students and look forward to continuing our mission of academic excellence and research-driven education.
+                       "
+                      
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      "I'm continually amazed by the creativity and dedication our members bring 
-                      to every challenge. Together, we're building tomorrow's solutions today."
+                       Warm regards,<br />
+                       Prof. S.K. Soni
                     </p>
                   </div>
                   <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
                     <div className="relative">
                       <img
                         src={facultyImage}
-                        alt="Dr. Sarah Johnson"
+                        alt="Prof. S.K. SONI"
                         className="w-64 h-64 object-cover rounded-xl shadow-card"
                       />
                       <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-10" />
