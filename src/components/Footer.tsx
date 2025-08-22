@@ -10,8 +10,8 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/drone-iot-club-mmmut/' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/drone_iot_club.mmmut?utm_source=ig_web_button_share_sheet&igsh=azlqdW9uNWc3b3Jq' },
     { name: 'GitHub', icon: Github, href: '#' },
     { name: 'YouTube', icon: Youtube, href: '#' },
   ];
@@ -81,15 +81,7 @@ const Footer = () => {
                   contact@droneiotclub.edu
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-primary" />
-                <a
-                  href="tel:+91-9876543210"
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
-                  +91-98765-43210
-                </a>
-              </div>
+              
             </div>
           </div>
 
