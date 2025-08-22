@@ -54,12 +54,13 @@ const Home = () => {
         {/* Parallax Background */}
         <div 
           className="absolute inset-0 w-full h-full parallax-bg"
-          style={{
-            backgroundImage: url(${heroImage}),
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            transform: translateY(${scrollY * 0.5}px),
-          }}
+        style={{
+  backgroundImage: `url(${heroImage})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  transform: `translateY(${scrollY * 0.5}px)`,
+}}
+
         />
         
         {/* Dark Overlay */}
