@@ -181,7 +181,7 @@ const Projects = () => {
               Our Projects
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-             "Explore our visionary Drone and IoT innovations — redefining what’s possible by shaping the future of technology and inspiring smarter, sustainable, and impactful solutions for a safer, more connected world."
+             Explore our visionary Drone and IoT innovations — redefining what’s possible by shaping the future of technology and inspiring smarter, sustainable, and impactful solutions for a safer, more connected world.
             </p>
           </motion.div>
         </div>
