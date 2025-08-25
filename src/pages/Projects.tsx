@@ -4,6 +4,15 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import {  Github, Calendar } from 'lucide-react';
+import ImageNabard from '@/assets/Nabard_project.jpg';
+import ImageGuidar from '@/assets/GuidAR.jpg';
+import ImageLF from '@/assets/LineFollower.jpg';
+import ImageNeo from '@/assets/NeoAttend.png';
+import ImagePrint from '@/assets/PrintSecure2.jpg';
+import ImageSS from '@/assets/Screenshot 2025-03-29 113438 - PRIYANSHU Kashyap.png';
+import ImageTS from '@/assets/TollSphere.jpg';
+import ImageCF from '@/assets/CryoFi.jpg';
+import ImageSP from '@/assets/Smartphone2.jpg';
 
 const Projects = () => {
   const projects = [
@@ -22,7 +31,7 @@ const Projects = () => {
     {
       title: ' NABARD PROJECT',
       description: 'AI-powered drone capable of autonomous patrol missions with real-time object detection and tracking capabilities.',
-      image: 'src/assets/Nabard_project.jpg',
+      image: ImageNabard,
       tags: ['AI', 'Computer Vision', 'Autonomous Flight'],
       status: 'Completed',
       date: '2024',
@@ -34,7 +43,7 @@ const Projects = () => {
     {
       title: '@AV32 (Smartphone controlled Wi-Fi Quadcopter with ESP 32 as Flight Controller) ',
       description: 'Smartphone controlled Wi-Fi based Quadcopter , using ESP-32 as Flight Controller( self designed flight controller PCB ) and the required sensors for holding altitude and pressure along with integration of GPS sensor  to  implement return to home feature .',
-      image: 'src/assets/Smartphone2.jpg',
+      image: ImageSP,
       
       tags: ['IoT', 'Environmental', 'Data Analytics'],
       status: 'Completed',
@@ -47,7 +56,7 @@ const Projects = () => {
     {
       title: ' TollSphere',
       description: 'Working prototype of the toll collection and management system using esp8266(NodeMCU)',
-      image: 'src/assets/TollSphere.jpg',
+      image: ImageTS,
       tags: ['Agriculture', 'Precision Farming', 'Analytics'],
       status: 'Completed',
       date: '2023',
@@ -59,7 +68,7 @@ const Projects = () => {
     {
       title: 'CryoFi',
       description: 'CryoFi is an intelligent baby monitoring system that listens, understands, and alerts.',
-      image: 'src/assets/CryoFi.jpg',
+      image: ImageCF ,
       tags: ['Agriculture', 'Precision Farming', 'Analytics'],
       status: 'Completed',
       date: '2023',
@@ -71,7 +80,7 @@ const Projects = () => {
     {
       title: ' PrintSecure',
       description: 'It is a smart biometric locking system powered by Arduino, designed for secure, keyless access using fingerprint authentication. Combining IoT innovation with precision security, it offers a modern solution to traditional locks—fast, reliable, and tamper-resistant.',
-      image: 'src/assets/PrintSecure2.jpg',
+      image: ImagePrint,
       tags: ['Agriculture', 'Precision Farming', 'Analytics'],
       status: 'Completed',
       date: '2023',
@@ -83,7 +92,7 @@ const Projects = () => {
     {
       title: 'Line FollowerBot',
       description: 'Multi-drone coordination system for collaborative missions using swarm intelligence algorithms.',
-      image: 'src/assets/LineFollower.jpg',
+      image: ImageLF,
       tags: ['Swarm Robotics', 'Machine Learning', 'Coordination'],
       status: 'Completed',
       date: '2023',
@@ -95,7 +104,7 @@ const Projects = () => {
     {
       title: 'GuidAR',
       description: 'GuidAR is a smart belt for the visually impaired, using ESP32 and two angled ultrasonic sensors—one for front obstacles, the other for ground hazards like potholes, stones, and stairs. An internal algorithm detects obstacle type and sends movement instructions (left, right, stop) via Telegram. A notification reader app reads these messages aloud on the user’s phone, working best with earphones or AirPods.',
-      image: 'src/assets/GuidAR.jpg',
+      image: ImageGuidar,
       tags: ['Emergency Response', 'Medical', 'Search & Rescue'],
       status: 'In Progress',
       date: '2024',
@@ -107,7 +116,7 @@ const Projects = () => {
     {
       title: 'NeoAttend',
       description: 'An AI-powered face attendance system designed to automate and streamline identity verification using facial recognition. The system supports multiple modes, including real-time live detection and batch photo upload, ensuring accurate, flexible, and secure attendance tracking in academic or organizational settings.',
-      image: 'src/assets/NeoAttend.png',
+      image: ImageNeo,
       tags: ['Photogrammetry', '3D Mapping', 'Computer Vision'],
       status: 'Planning',
       date: '2024',
