@@ -215,7 +215,7 @@ const Projects = () => {
                         {project.date}
                       </div>
                     </div>
-
+                   {/* class */}
                     <h3 className="text-xl font-display font-semibold mb-3 text-foreground">
                       {project.title}
                     </h3>
