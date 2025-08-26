@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import {  Github, Calendar } from 'lucide-react';
 import ImageNabard from '@/assets/Nabard_project.jpg';
 import ImageGuidar from '@/assets/GuidAR.jpg';
-import ImageLF from '@/assets/LineFollower.jpg';
+import ImageLF from '@/assets/lineFollowerBot.png';
 import ImageNeo from '@/assets/NeoAttend.png';
 import ImagePrint from '@/assets/PrintSecure2.jpg';
 import ImageSS from '@/assets/Screenshot 2025-03-29 113438 - PRIYANSHU Kashyap.png';
@@ -186,7 +186,7 @@ const Projects = () => {
           </motion.div>
         </div>
       </section>
-
+       
       {/* Projects Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -288,15 +288,20 @@ const Projects = () => {
               We're always looking for passionate individuals to join our development teams.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="mailto:droneiotclub.mmmut@gmail.com" >
               <Button className="btn-neon px-8 py-4">
                 Propose a Project
+                
               </Button>
+              </a>
+              <a href="https://www.linkedin.com/company/drone-iot-club-mmmut/" >
               <Button
                 variant="outline"
                 className="px-8 py-4 border-primary/20 hover:border-primary hover:bg-primary/10"
               >
                 Join Development Team
               </Button>
+              </a>
             </div>
           </motion.div>
         </div>
