@@ -451,7 +451,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
       <Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center gap-6 p-6">
         {/* Founder Image */}
         <img
-          src="final-year/AnkitSir.jpg"
+          src="final-year/AnkitSir.png"
           alt="Ankit Kumar Mishra"
           className="w-40 h-40 object-cover rounded-full border-4 border-primary"
         />
