@@ -219,7 +219,9 @@ const Home = () => {
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                        Warm regards,<br />
-                       Prof. S.K. Soni
+                       Prof. S.K. Soni<br />
+                       Head of Department<br />
+                       Electronics and Communication Department
                     </p>
                   </div>
                   <div className="order-1 lg:order-2 flex justify-center lg:justify-end">

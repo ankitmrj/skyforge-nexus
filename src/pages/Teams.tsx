@@ -435,6 +435,48 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
         </div>
       </section>
       
+{/* ---------- FOUNDER ---------- */}
+<section className="py-20 bg-background">
+  <div className="container mx-auto px-4">
+    <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
+      Our Esteemed Founder
+    </h2>
+
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center gap-6 p-6">
+        {/* Founder Image */}
+        <img
+          src="final-year/AnkitSir.png"
+          alt="Ankit Kumar Mishra"
+          className="w-40 h-40 object-cover rounded-full border-4 border-primary"
+        />
+
+        {/* Founder Info */}
+        <CardContent className="text-center md:text-left">
+          <h3 className="text-2xl font-display font-semibold text-foreground">
+            Dr. Ankit Kumar Mishra
+          </h3>
+          <p className="text-primary font-medium">
+            PhD, Electronics and Communication Department
+          </p>
+          <p className="text-muted-foreground mt-3 leading-relaxed">
+            Founder of the Drone and IoT Club. His visionary leadership laid the
+            foundation for a vibrant platform where students explore drone
+            technology and the Internet of Things through collaboration,
+            creativity, and cutting-edge research.
+          </p>
+        </CardContent>
+      </Card>
+    </motion.div>
+  </div>
+</section>
+
+
  {/* ---------- FINAL YEAR ---------- */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
