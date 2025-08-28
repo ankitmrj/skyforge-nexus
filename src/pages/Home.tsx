@@ -238,7 +238,7 @@ const Home = () => {
                       Prof. S.K. SONI
                     </h3>
     Head of Department<br />
-    Electronics and Communication Department
+    Electronics and Communication Engineering
   </p>
 </div>
 
