@@ -205,9 +205,7 @@ const Home = () => {
                     <h2 className="text-3xl font-display font-bold mb-4 text-foreground">
                       Message from Faculty Advisor
                     </h2>
-                    <h3 className="text-xl font-semibold text-primary mb-4">
-                      Prof. S.K. SONI
-                    </h3>
+                 
                     <p className="text-muted-foreground leading-relaxed mb-6">
                        "As the Faculty Advisor and Head of the Department of Electronics & Communication Engineering at Madan Mohan Malaviya University of Technology,
                        I am dedicated to ensuring that our students receive the highest quality education.
@@ -217,12 +215,12 @@ const Home = () => {
                        "
                       
                     </p>
-                    <p className="text-muted-foreground leading-relaxed">
+                       <p className="text-muted-foreground leading-relaxed">
                        Warm regards,<br />
                        Prof. S.K. Soni<br />
-                       Head of Department<br />
-                       Electronics and Communication Department
+                  
                     </p>
+                 
                   </div>
                   <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
                     <div className="relative">
@@ -231,6 +229,12 @@ const Home = () => {
                         alt="Prof. S.K. SONI"
                         className="w-64 h-64 object-cover rounded-xl shadow-card"
                       />
+                         <p className="text-muted-foreground leading-relaxed">
+                       Warm regards,<br />
+                       Prof. S.K. Soni<br />
+                       Head of Department<br />
+                       Electronics and Communication Department
+                    </p>
                       <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-10" />
                     </div>
                   </div>
