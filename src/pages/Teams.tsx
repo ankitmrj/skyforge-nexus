@@ -459,10 +459,10 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
         {/* Founder Info */}
         <CardContent className="text-center md:text-left">
           <h3 className="text-2xl font-display font-semibold text-foreground">
-            Dr. Ankit Kumar Mishra
+            Mr. Ankit Kumar Mishra
           </h3>
           <p className="text-primary font-medium">
-            PhD, Electronics and Communication Department
+            PhD Pursuing, Electronics and Communication Department
           </p>
           <p className="text-muted-foreground mt-3 leading-relaxed">
             Founder of the Drone and IoT Club. His visionary leadership laid the
