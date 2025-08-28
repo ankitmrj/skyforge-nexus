@@ -222,22 +222,24 @@ const Home = () => {
                     </p>
                  
                   </div>
-                  <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-                    <div className="relative">
-                      <img
-                        src={facultyImage}
-                        alt="Prof. S.K. SONI"
-                        className="w-64 h-64 object-cover rounded-xl shadow-card"
-                      />
-                         <p className="text-muted-foreground leading-relaxed">
-                       Warm regards,<br />
-                       Prof. S.K. Soni<br />
-                       Head of Department<br />
-                       Electronics and Communication Department
-                    </p>
-                      <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-10" />
-                    </div>
-                  </div>
+                 <div className="order-1 lg:order-2 flex flex-col items-center lg:items-end">
+ 
+  <div className="relative w-64">
+    <img
+      src={facultyImage}
+      alt="Prof. S.K. SONI"
+      className="w-64 h-64 object-cover rounded-xl shadow-card"
+    />
+    <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-10" />
+  </div>
+
+  <p className="mt-3 w-64 text-center lg:text-right font-semibold text-muted-foreground leading-relaxed break-words">
+    Prof. S.K. Soni<br />
+    Head of Department<br />
+    Electronics and Communication Department
+  </p>
+</div>
+
                 </div>
               </CardContent>
             </Card>
