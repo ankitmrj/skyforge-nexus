@@ -232,9 +232,11 @@ const Home = () => {
     />
     <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-10" />
   </div>
-
+<br /> <br />
   <p className="mt-3 w-64 text-center lg:text-right font-semibold text-muted-foreground leading-relaxed break-words">
-    Prof. S.K. Soni<br />
+   <h3 className="text-xl font-semibold text-primary mb-4">
+                      Prof. S.K. SONI
+                    </h3><br />
     Head of Department<br />
     Electronics and Communication Department
   </p>
