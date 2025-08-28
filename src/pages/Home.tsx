@@ -236,7 +236,7 @@ const Home = () => {
   <p className="mt-3 w-64 text-center lg:text-right font-semibold text-muted-foreground leading-relaxed break-words">
    <h3 className="text-xl font-semibold text-primary mb-4">
                       Prof. S.K. SONI
-                    </h3><br />
+                    </h3>
     Head of Department<br />
     Electronics and Communication Department
   </p>
