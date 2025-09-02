@@ -456,17 +456,17 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
           className="w-40 h-40 object-cover rounded-full border-4 border-primary"
         />
 
-        <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <a
-              href="https://www.linkedin.com/in/ankitkumar5gc/"
-              target="_blank"
-              rel="noopener noreferrer"
-              Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center gap-6 p-6 group relative"
-
-            >
-              <Linkedin className="h-6 w-6 text-primary-foreground" />
-            </a>
-          </div>
+       <div className="absolute bottom-0 right-0">
+      <a
+        href="https://www.linkedin.com/in/ankitkumar5gc/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors shadow-lg"
+      >
+        <Linkedin className="h-6 w-6 text-primary-foreground" />
+      </a>
+    </div>
+        
 
         {/* Founder Info */}
         <CardContent className="text-center md:text-left">
