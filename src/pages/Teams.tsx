@@ -194,7 +194,7 @@ const Teams = () => {
       position: 'Lead Web Development',
       branch:'Computer Science Engineering',
       image: '/third-year/AnkitSrivastav.JPG',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/ankit2005/',
     },
     {
       name: 'Shivansh Singh',
@@ -456,6 +456,18 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
           className="w-40 h-40 object-cover rounded-full border-4 border-primary"
         />
 
+        <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <a
+              href="https://www.linkedin.com/in/ankitkumar5gc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center gap-6 p-6 group relative"
+
+            >
+              <Linkedin className="h-6 w-6 text-primary-foreground" />
+            </a>
+          </div>
+
         {/* Founder Info */}
         <CardContent className="text-center md:text-left">
           <h3 className="text-2xl font-display font-semibold text-foreground">
@@ -506,8 +518,8 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
     sensitivity: 0.6,
   }}
   grabCursor={true}
+  slidesPerView={1.2} /* 👈 mobile ke liye by default */
   spaceBetween={20}
-  slidesPerView={1.2}   // 👈 mobile ke liye by default
   breakpoints={{
     480: { slidesPerView: 1.5 }, // thoda bada mobile
     640: { slidesPerView: 2 },   // tablet
@@ -515,6 +527,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
     1280: { slidesPerView: 4 },  // large desktop
   }}
 >
+
 
               {final_year.map((member, index) => (
                 <SwiperSlide key={`final-${index}`}>
@@ -535,7 +548,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
           </div>
 
           {/* 👉 Large screens → 5×2 grid */}
-          <div className="hidden lg:grid grid-cols-5 gap-6">
+        <div className="hidden lg:grid grid-cols-5 gap-6">
             {final_year.map((member, index) => (
               <motion.div
                 key={`final-grid-${index}`}
@@ -589,7 +602,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
 
             {third_year.map((member, index) => (
               <SwiperSlide key={`third-${index}`}>
-                <motion.div
+              <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.05 }}
@@ -643,7 +656,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
 
             {second_year.map((member, index) => (
               <SwiperSlide key={`second-${index}`}>
-                <motion.div
+              <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.05 }}
@@ -689,7 +702,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
 
       {/* CTA Button with LinkedIn */}
       <motion.a
-        href="https://www.linkedin.com/company/drone-iot-club-mmmut"
+      href="https://www.linkedin.com/company/drone-iot-club-mmmut"
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.05 }}
