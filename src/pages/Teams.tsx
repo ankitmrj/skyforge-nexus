@@ -437,8 +437,8 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
       
 {/* ---------- FOUNDER ---------- */}
 <section className="py-20 bg-background">
-  <div className="container mx-auto px-4">
-    <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
+  <div className="container mx-auto px-4 max-w-2xl">
+    <h2 className="text-2xl font-display font-semibold mb-8 text-foreground">
       Our Esteemed Founder
     </h2>
 
@@ -448,36 +448,35 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center gap-6 p-6">
+      <Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col items-center gap-4 p-6">
         {/* Founder Image */}
-        <div className="relative group">
+        <div className="relative">
           <img
             src="final-year/AnkitSir.png"
             alt="Ankit Kumar Mishra"
-            className="w-40 h-40 object-cover rounded-full border-4 border-primary"
+            className="w-48 h-48 md:w-52 md:h-52 object-cover rounded-full border-4 border-primary"
           />
-          {/* LinkedIn Icon on hover */}
-          <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        </div>
+
+        {/* Founder Info */}
+        <CardContent className="text-center flex-1">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground">
+              Mr. Ankit Kumar Mishra
+            </h3>
             <a
               href="https://www.linkedin.com/in/ankitkumar5gc/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors"
+              className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors shadow-md"
             >
-              <Linkedin className="h-6 w-6 text-primary-foreground" />
+              <Linkedin className="h-5 w-5 text-primary-foreground" />
             </a>
           </div>
-        </div>
-
-        {/* Founder Info */}
-        <CardContent className="text-center md:text-left">
-          <h3 className="text-2xl font-display font-semibold text-foreground">
-            Mr. Ankit Kumar Mishra
-          </h3>
-          <p className="text-primary font-medium">
+          <p className="text-sm md:text-base text-primary font-medium">
             PhD Pursuing, Electronics and Communication Department
           </p>
-          <p className="text-muted-foreground mt-3 leading-relaxed">
+          <p className="text-muted-foreground mt-2 leading-relaxed text-sm md:text-base">
             Founder of the Drone and IoT Club. His visionary leadership laid the
             foundation for a vibrant platform where students explore drone
             technology and the Internet of Things through collaboration,
@@ -488,6 +487,9 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
     </motion.div>
   </div>
 </section>
+
+
+
 
 
 {/* ---------- FINAL YEAR ---------- */}
