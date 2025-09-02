@@ -105,7 +105,7 @@ const About = () => {
             {/* Right Side - Text */}
             <div className="bg-card p-8 rounded-2xl shadow-lg">
               <h2 className="text-4xl font-display font-bold text-foreground mb-6">
-                US CORE:)
+                US CORE
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Our club is dedicated to exploring the exciting world of drones and the
