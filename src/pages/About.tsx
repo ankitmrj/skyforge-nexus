@@ -3,23 +3,27 @@ import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Eye, History } from 'lucide-react';
 import droneOpsImage from '@/assets/drone-operations.jpg';
+import teamPhoto from '../assets/team-photo.jpg';
 
 const About = () => {
   const sections = [
     {
       icon: History,
       title: 'Our History',
-      content: 'Founded in 2019, the Drone & IoT Club began as a small group of passionate students interested in aerial robotics. Over the years, we have grown into a leading technical club, participating in national competitions and developing innovative solutions for real-world problems.',
+      content:
+        'Founded in 2019, the Drone & IoT Club began as a small group of passionate students interested in aerial robotics. Over the years, we have grown into a leading technical club, participating in national competitions and developing innovative solutions for real-world problems.',
     },
     {
       icon: Target,
       title: 'Our Mission',
-      content: 'To provide a hands-on platform for learning and innovation in Drones, IoT, Embedded Systems, AI, and ML, sparking curiosity and fostering practical skills. We aim to create a collaborative environment where members share ideas, work on real-world projects, and turn innovation into impact.'
+      content:
+        'To provide a hands-on platform for learning and innovation in Drones, IoT, Embedded Systems, AI, and ML, sparking curiosity and fostering practical skills. We aim to create a collaborative environment where members share ideas, work on real-world projects, and turn innovation into impact.',
     },
     {
       icon: Eye,
       title: 'Our Vision',
-      content: 'To become a premier center for drone and IoT innovation, producing skilled engineers who will lead the next generation of autonomous systems and aerial robotics. We envision a future where our alumni are at the forefront of technological advancement.',
+      content:
+        'To become a premier center for drone and IoT innovation, producing skilled engineers who will lead the next generation of autonomous systems and aerial robotics. We envision a future where our alumni are at the forefront of technological advancement.',
     },
   ];
 
@@ -38,8 +42,8 @@ const About = () => {
               About Our Club
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Learn about our journey, mission, and the vision that drives us to push
-              the boundaries of drone technology and IoT innovation.
+              Learn about our journey, mission, and the vision that drives us to push the
+              boundaries of drone technology and IoT innovation.
             </p>
           </motion.div>
         </div>
@@ -76,6 +80,60 @@ const About = () => {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* US CORE Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 gap-10 items-center"
+          >
+            {/* Left Side - Team Photo */}
+            <div>
+              <img
+                src={teamPhoto}
+                alt="Our Team"
+                className="rounded-2xl shadow-lg object-cover w-full h-80"
+              />
+            </div>
+
+            {/* Right Side - Text */}
+            <div className="bg-card p-8 rounded-2xl shadow-lg">
+              <h2 className="text-4xl font-display font-bold text-foreground mb-6">
+                US CORE:)
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Our club is dedicated to exploring the exciting world of drones and the
+                Internet of Things (IoT). We bring together students with a passion for
+                cutting-edge technology, innovation, and problem-solving. From building
+                drones to developing IoT projects, we engage in hands-on workshops,
+                competitions, and research initiatives that push the boundaries of modern
+                technology.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Bottom Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
+          >
+            <h3 className="text-2xl font-display font-bold text-foreground mb-4">
+              Our Awesome Team!
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              A dedicated team of skilled individuals committed to advancing drone and IoT
+              technology through collaboration and innovation.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -120,7 +178,8 @@ const About = () => {
                     Advanced Drone Operations
                   </h3>
                   <p className="text-white/90">
-                    Our team conducting precision flight tests and data collection missions.
+                    Our team conducting precision flight tests and data collection
+                    missions.
                   </p>
                 </div>
               </Card>
@@ -170,7 +229,8 @@ const About = () => {
               Ready to Join Our Mission?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Whether you’re just starting out or an experienced developer eager to innovate, our club welcomes you to explore, create, and grow with us.
+              Whether you’re just starting out or an experienced developer eager to
+              innovate, our club welcomes you to explore, create, and grow with us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
