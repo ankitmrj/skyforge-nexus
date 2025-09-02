@@ -189,7 +189,7 @@ const Teams = () => {
       image: '/third-year/SonuChaudhary.jpg',
       linkedin: 'https://www.linkedin.com/in/sonu-kumar-chaudhary-8057332a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
-     {
+    {
       name: 'Ankit Srivastav',
       position: 'Lead Web Development',
       branch:'Computer Science Engineering',
@@ -217,7 +217,7 @@ const Teams = () => {
       image: '/third-year/AyushShukla.jpg',
       linkedin: '#',
     },
-     {
+    {
       name: 'Shristi Dixit',
       position: 'Co-Lead web Dev',
       branch:'Computer Science Engineering',
@@ -323,7 +323,7 @@ const second_year=[   {
       branch:'Electronics and Communication Engineering',
       linkedin: 'https://www.linkedin.com/in/chandramauli-patel-261436327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
-     {
+    {
       name: 'Manash Manish',
       image: 'second-year/Manas.jpg',
       branch:'Computer Science Engineering',
@@ -353,7 +353,7 @@ const second_year=[   {
       branch:'Computer Science Engineering',
       linkedin: 'https://www.linkedin.com/in/anjali-singh-993b3630b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
-     {
+    {
       name: 'Abhishek Tiwari',
       image: 'second-year/Abhishek.jpg',
       branch:'Electronics and Communication Engineering',
@@ -368,7 +368,7 @@ const second_year=[   {
   ];
 
   // Reusable slide card (same markup as pehle)
-const MemberCard = (member: { name: string; position?: string; branch?: string; image: string; linkedin: string }) => (
+const MemberCard = (member) => (
   <Card className="bg-card border-border card-hover overflow-hidden group relative">
     <div className="relative overflow-hidden">
       <img
@@ -450,23 +450,24 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
     >
       <Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center gap-6 p-6">
         {/* Founder Image */}
-        <img
-          src="final-year/AnkitSir.png"
-          alt="Ankit Kumar Mishra"
-          className="w-40 h-40 object-cover rounded-full border-4 border-primary"
-        />
-
-       <div className="absolute bottom-0 right-0">
-      <a
-        href="https://www.linkedin.com/in/ankitkumar5gc/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors shadow-lg"
-      >
-        <Linkedin className="h-6 w-6 text-primary-foreground" />
-      </a>
-    </div>
-        
+        <div className="relative group">
+          <img
+            src="final-year/AnkitSir.png"
+            alt="Ankit Kumar Mishra"
+            className="w-40 h-40 object-cover rounded-full border-4 border-primary"
+          />
+          {/* LinkedIn Icon on hover */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <a
+              href="https://www.linkedin.com/in/ankitkumar5gc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors"
+            >
+              <Linkedin className="h-6 w-6 text-primary-foreground" />
+            </a>
+          </div>
+        </div>
 
         {/* Founder Info */}
         <CardContent className="text-center md:text-left">
@@ -489,7 +490,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
 </section>
 
 
- {/* ---------- FINAL YEAR ---------- */}
+{/* ---------- FINAL YEAR ---------- */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
@@ -591,7 +592,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
   }}
   grabCursor={true}
   spaceBetween={20}
-  slidesPerView={1.2}   // 👈 mobile ke liye by default
+  slidesPerView={1.2}    // 👈 mobile ke liye by default
   breakpoints={{
     480: { slidesPerView: 1.5 }, // thoda bada mobile
     640: { slidesPerView: 2 },   // tablet
@@ -645,7 +646,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
   }}
   grabCursor={true}
   spaceBetween={20}
-  slidesPerView={1.2}   // 👈 mobile ke liye by default
+  slidesPerView={1.2}    // 👈 mobile ke liye by default
   breakpoints={{
     480: { slidesPerView: 1.5 }, // thoda bada mobile
     640: { slidesPerView: 2 },   // tablet
