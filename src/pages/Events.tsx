@@ -152,20 +152,22 @@ const Events = () => {
           </div>
         </div>
       </section>
-<section className="py-20 bg-background-secondary">
-  <div className="container mx-auto px-4">
+
+      {/*SW'25 CARD*/}
+<section className="py-20 bg-background-secondary">{/*background-secondary is a custom background*/}
+  <div className="container mx-auto px-4">{/*mx-auto centers hz*/}
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
       className="max-w-4xl mx-auto"
-    >
+    >{/*animation-wrapper*/}
       <Card className="relative overflow-hidden bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] text-white shadow-2xl rounded-3xl border border-white/10">
         
         {/* Background Logo */}
         <div className="absolute inset-0 opacity-10 flex items-center justify-center">
-          <img src="/sw25logo.png" alt="SWIFTWINGS’25 Logo" className="max-w-[70%]" />
+          <img src="/sw25logo.png" alt="SWIFTWINGS'25 Logo" className="max-w-[70%]" />
         </div>
 
         <CardContent className="p-12 relative z-10 text-center">
@@ -191,15 +193,22 @@ const Events = () => {
           </div>
 
           {/* Event Title */}
-          <motion.h2
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-6xl md:text-7xl font-bold mb-6 tracking-tight"
-            style={{ fontFamily: "Megatron, sans-serif" }}
-          >
-            SWIFTWINGS’25
-          </motion.h2>
+        <motion.h2
+  initial={{ scale: 0.9, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ delay: 0.2, duration: 0.6 }}
+  className="font-bold mb-6 tracking-tight text-center leading-tight flex justify-center"
+  style={{
+    fontFamily: "Megatron, sans-serif",
+    fontSize: "clamp(2.2rem, 8vw, 5rem)",
+    letterSpacing: "0.05em" // thoda spacing for balance
+  }}
+>
+  SWIFTWINGS'<span className="ml-1">25</span>
+</motion.h2>
+
+
+
 
           {/* Theme */}
           <p className="text-lg md:text-xl mb-10">
