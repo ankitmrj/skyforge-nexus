@@ -113,7 +113,7 @@ const Teams = () => {
       linkedin: 'https://www.linkedin.com/in/pranjalmishra2601/',
     },
     {
-      name: 'Paras Varshrey',
+      name: 'Paras Varshney',
       position: 'Finance Secretary',
       branch:'Electronics and Communication Engineering (Internet of Things)',
       image: '/third-year/ParasVarshney.jpg',
