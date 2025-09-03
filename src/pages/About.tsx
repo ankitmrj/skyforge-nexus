@@ -233,6 +233,7 @@ const About = () => {
               innovate, our club welcomes you to explore, create, and grow with us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* Join the Club button (no link) */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -240,13 +241,18 @@ const About = () => {
               >
                 Join the Club
               </motion.button>
-              <motion.button
+
+              {/* Contact Us button with LinkedIn link */}
+              <motion.a
+                href="https://www.linkedin.com/company/drone-iot-club-mmmut/"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-secondary-neon px-8 py-4 rounded-lg font-semibold"
               >
                 Contact Us
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>

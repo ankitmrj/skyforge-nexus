@@ -4,6 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Transformers/Megatron font*/
+@font-face {
+  font-family: "Transformers";
+  src: url("/fonts/Transformers.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Megatron";
+  src: url("/fonts/Megatron.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Megatron";
+  src: url("/fonts/Megatron Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Megatron Hollow";
+  src: url("/fonts/Megatron Hollow.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Drone & IoT Club Design System - Dark Tech Theme with Neon Accents */
 
 @layer base {
