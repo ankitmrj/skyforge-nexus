@@ -448,8 +448,11 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col items-center gap-4 p-6">
+      <Card className="bg-card border-border shadow-lg rounded-2xl overflow-hidden flex flex-col items-center gap-4 p-6" style={{
+    boxShadow: "0 0 15px rgba(59,130,246,0.6), 0 0 30px rgba(59,130,246,0.4)"
+  }}>
         {/* Founder Image */}
+        
         <div className="relative">
           <img
             src="final-year/AnkitSir.png"
