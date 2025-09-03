@@ -83,6 +83,105 @@ const Events = () => {
         </div>
       </section>
 
+
+{/*SW'25 CARD*/}
+<section className="py-20 bg-background-secondary">{/*background-secondary is a custom background*/}
+  <div className="container mx-auto px-4">{/*mx-auto centers hz*/}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="max-w-4xl mx-auto"
+    >{/*animation-wrapper*/}
+      <Card className="relative overflow-hidden bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] text-white shadow-2xl rounded-3xl border border-white/10">
+        
+        {/* Background Logo */}
+        <div className="absolute inset-0 opacity-10 flex items-center justify-center">
+          <img src="/sw25logo.png" alt="SWIFTWINGS'25 Logo" className="max-w-[70%]" />
+        </div>
+
+        <CardContent className="p-12 relative z-10 text-center">
+          
+          {/* Logos Row */}
+<div className="flex justify-between items-center mb-10">
+  {/* Left: Transformers Symbol */}
+  <img 
+  src="/transformer.png" 
+  alt="Transformers Symbol" 
+  className="h-20 drop-shadow-[0_0_25px_rgba(0,191,255,0.8)]"
+/>
+            {/* Right: SWIFTWINGS Logo */}
+            <img 
+              src="/sw25logo.png" 
+              alt="SWIFTWINGS Logo" 
+              className="h-20 drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
+            />
+          </div>
+
+          {/* Event Title */}
+        <motion.h2
+  initial={{ scale: 0.9, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ delay: 0.2, duration: 0.6 }}
+  className="font-bold mb-6 tracking-tight text-center leading-tight flex justify-center"
+  style={{
+    fontFamily: "Megatron, sans-serif",
+    fontSize: "clamp(2.2rem, 8vw, 5rem)",
+    letterSpacing: "0.05em" // thoda spacing for balance
+  }}
+>
+  SWIFTWINGS'<span className="ml-1">25</span>
+</motion.h2>
+          {/* Theme */}
+          <p className="text-lg md:text-xl mb-10">
+            🚀 RC Fixed-Wing Drone Competition <br />
+            <span className="text-yellow-400 font-bold tracking-wide uppercase">
+              Theme: Transformers
+            </span>
+          </p>
+
+          {/* Details Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center mb-10">
+            <div>
+              <Calendar className="mx-auto mb-2 h-7 w-7 text-cyan-400" />
+              <p className="text-sm opacity-90">Date</p>
+              <p className="font-bold text-lg">Coming Soon</p>
+            </div>
+            <div>
+              <MapPin className="mx-auto mb-2 h-7 w-7 text-cyan-400" />
+              <p className="text-sm opacity-90">Venue</p>
+              <p className="font-bold text-lg">Main Campus</p>
+            </div>
+            <div>
+              <Users className="mx-auto mb-2 h-7 w-7 text-cyan-400" />
+              <p className="text-sm opacity-90">Participation</p>
+              <p className="font-bold text-lg">Team / Individual</p>
+            </div>
+          </div>
+
+          {/* Button */}
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Button
+              size="lg"
+              className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-xl shadow-lg hover:shadow-[0_0_20px_rgba(255,255,0,0.7)] transition"
+            >
+              Coming Soon – Stay Tuned
+            </Button>
+          </motion.div>
+
+          <p className="text-xs text-center mt-6 opacity-80">
+            Registration will open soon. Stay connected for updates!
+          </p>
+        </CardContent>
+      </Card>
+    </motion.div>
+  </div>
+</section>
+
+
+
+
       {/* Events Listing */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -153,109 +252,7 @@ const Events = () => {
         </div>
       </section>
 
-      {/*SW'25 CARD*/}
-<section className="py-20 bg-background-secondary">{/*background-secondary is a custom background*/}
-  <div className="container mx-auto px-4">{/*mx-auto centers hz*/}
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="max-w-4xl mx-auto"
-    >{/*animation-wrapper*/}
-      <Card className="relative overflow-hidden bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] text-white shadow-2xl rounded-3xl border border-white/10">
-        
-        {/* Background Logo */}
-        <div className="absolute inset-0 opacity-10 flex items-center justify-center">
-          <img src="/sw25logo.png" alt="SWIFTWINGS'25 Logo" className="max-w-[70%]" />
-        </div>
-
-        <CardContent className="p-12 relative z-10 text-center">
-          
-          {/* Logos Row */}
-<div className="flex justify-between items-center mb-10">
-  {/* Left: Transformers Symbol */}
-  <img 
-  src="/transformer.png" 
-  alt="Transformers Symbol" 
-  className="h-20 drop-shadow-[0_0_25px_rgba(0,191,255,0.8)]"
-/>
-
-
-
-
-            {/* Right: SWIFTWINGS Logo */}
-            <img 
-              src="/sw25logo.png" 
-              alt="SWIFTWINGS Logo" 
-              className="h-20 drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
-            />
-          </div>
-
-          {/* Event Title */}
-        <motion.h2
-  initial={{ scale: 0.9, opacity: 0 }}
-  animate={{ scale: 1, opacity: 1 }}
-  transition={{ delay: 0.2, duration: 0.6 }}
-  className="font-bold mb-6 tracking-tight text-center leading-tight flex justify-center"
-  style={{
-    fontFamily: "Megatron, sans-serif",
-    fontSize: "clamp(2.2rem, 8vw, 5rem)",
-    letterSpacing: "0.05em" // thoda spacing for balance
-  }}
->
-  SWIFTWINGS'<span className="ml-1">25</span>
-</motion.h2>
-
-
-
-
-          {/* Theme */}
-          <p className="text-lg md:text-xl mb-10">
-            🚀 RC Fixed-Wing Drone Competition <br />
-            <span className="text-yellow-400 font-bold tracking-wide uppercase">
-              Theme: Transformers
-            </span>
-          </p>
-
-          {/* Details Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center mb-10">
-            <div>
-              <Calendar className="mx-auto mb-2 h-7 w-7 text-cyan-400" />
-              <p className="text-sm opacity-90">Date</p>
-              <p className="font-bold text-lg">Coming Soon</p>
-            </div>
-            <div>
-              <MapPin className="mx-auto mb-2 h-7 w-7 text-cyan-400" />
-              <p className="text-sm opacity-90">Venue</p>
-              <p className="font-bold text-lg">Main Campus</p>
-            </div>
-            <div>
-              <Users className="mx-auto mb-2 h-7 w-7 text-cyan-400" />
-              <p className="text-sm opacity-90">Participation</p>
-              <p className="font-bold text-lg">Team / Individual</p>
-            </div>
-          </div>
-
-          {/* Button */}
-          <motion.div whileHover={{ scale: 1.05 }}>
-            <Button
-              size="lg"
-              className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-xl shadow-lg hover:shadow-[0_0_20px_rgba(255,255,0,0.7)] transition"
-            >
-              Coming Soon – Stay Tuned
-            </Button>
-          </motion.div>
-
-          <p className="text-xs text-center mt-6 opacity-80">
-            Registration will open soon. Stay connected for updates!
-          </p>
-        </CardContent>
-      </Card>
-    </motion.div>
-  </div>
-</section>
-
+      
 
     </div>
   );
