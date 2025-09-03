@@ -476,7 +476,7 @@ Meet the visionaries behind our Club — driven by curiosity, innovation, and a 
           <p className="text-sm md:text-base text-primary font-medium">
             PhD Pursuing, Electronics and Communication Department
           </p>
-          <p className="text-muted-foreground mt-2 leading-relaxed text-sm md:text-base">
+          <p className="text-foreground-50 mt-2 leading-relaxed text-sm md:text-base">
             Founder of the Drone and IoT Club. His visionary leadership laid the
             foundation for a vibrant platform where students explore drone
             technology and the Internet of Things through collaboration,
