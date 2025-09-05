@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageAgri from '@/assets/agricultureDrone.jpg';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -13,13 +14,16 @@ import ImageSS from '@/assets/Screenshot 2025-03-29 113438 - PRIYANSHU Kashyap.p
 import ImageTS from '@/assets/TollSphere.jpg';
 import ImageCF from '@/assets/CryoFi.jpg';
 import ImageSP from '@/assets/Smartphone2.jpg';
+import { Description } from '@radix-ui/react-toast';
+import { describe } from 'node:test';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Agriculture Drones',
       /*description: 'Distributed sensor network using drones for environmental data collection and real-time monitoring of air quality.',*/
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+      description:'This advanced agriculture drone revolutionizes modern farming with precision spraying technology.Equipped with high-capacity tanks and intelligent flight control, it ensures uniform coverage across fields.Efficient, eco-friendly, and time-saving, it boosts crop yield while reducing manual effort.',
+      image: ImageAgri,
       tags: ['IoT', 'Environmental', 'Data Analytics'],
       status: 'Completed',
       date: '2024',
@@ -30,7 +34,8 @@ const Projects = () => {
     }, 
     {
       title: ' NABARD PROJECT',
-      description: 'AI-powered drone capable of autonomous patrol missions with real-time object detection and tracking capabilities.',
+      //description: 'AI-powered drone capable of autonomous patrol missions with real-time object detection and tracking capabilities.',
+      description:'An AI-powered drone capable of autonomous patrol missions with real-time object detection and tracking. Designed for intelligent monitoring and enhanced security, Its versatility makes it suitable for applications in agriculture, defense, disaster management, and smart surveillance.',
       image: ImageNabard,
       tags: ['AI', 'Computer Vision', 'Autonomous Flight'],
       status: 'Completed',
@@ -42,7 +47,9 @@ const Projects = () => {
     },
     {
       title: '@AV32 (Smartphone controlled Wi-Fi Quadcopter with ESP 32 as Flight Controller) ',
-      description: 'Smartphone controlled Wi-Fi based Quadcopter , using ESP-32 as Flight Controller( self designed flight controller PCB ) and the required sensors for holding altitude and pressure along with integration of GPS sensor  to  implement return to home feature .',
+      //description: 'Smartphone controlled Wi-Fi based Quadcopter , using ESP-32 as Flight Controller( self designed flight controller PCB ) and the required sensors for holding altitude and pressure along with integration of GPS sensor  to  implement return to home feature .',
+      description:'A smartphone-controlled Wi-Fi quadcopter powered by an ESP-32 based self-designed flight controller PCB. Equipped with sensors for altitude and pressure stabilization, it also integrates a GPS module to implement the return-to-home feature. Designed for precision, reliability, and user-friendly operation.',
+  
       image: ImageSP,
       
       tags: ['IoT', 'Environmental', 'Data Analytics'],
@@ -55,7 +62,8 @@ const Projects = () => {
     },
     {
       title: ' TollSphere',
-      description: 'Working prototype of the toll collection and management system using esp8266(NodeMCU)',
+      //description: 'Working prototype of the toll collection and management system using esp8266(NodeMCU)',
+      description:'A working prototype of an automated toll collection and management system built using ESP8266 (NodeMCU). The system enables seamless, cashless transactions with real-time data handling, reducing human intervention and enhancing efficiency in toll operations.',
       image: ImageTS,
       tags: ['Agriculture', 'Precision Farming', 'Analytics'],
       status: 'Completed',
@@ -67,7 +75,8 @@ const Projects = () => {
     },
     {
       title: 'CryoFi',
-      description: 'CryoFi is an intelligent baby monitoring system that listens, understands, and alerts.',
+      //description: 'CryoFi is an intelligent baby monitoring system that listens, understands, and alerts.',
+      description:'CryoFi is an intelligent baby monitoring system that listens and interprets a baby’s cry in real time. It instantly alerts parents with smart notifications, ensuring timely attention and enhanced child safety. Designed for reliability and peace of mind in modern parenting.',
       image: ImageCF ,
       tags: ['Agriculture', 'Precision Farming', 'Analytics'],
       status: 'Completed',
@@ -79,7 +88,7 @@ const Projects = () => {
     },
     {
       title: ' PrintSecure',
-      description: 'It is a smart biometric locking system powered by Arduino, designed for secure, keyless access using fingerprint authentication. Combining IoT innovation with precision security, it offers a modern solution to traditional locks—fast, reliable, and tamper-resistant.',
+      description:'PrintSecure is a smart and intelligent biometric locking system powered by Arduino for secure, seamless, and keyless access through fingerprint authentication. By combining IoT innovation with advanced security features, it provides a fast, reliable, and tamper-resistant alternative to traditional locks.',    
       image: ImagePrint,
       tags: ['Agriculture', 'Precision Farming', 'Analytics'],
       status: 'Completed',
@@ -91,7 +100,8 @@ const Projects = () => {
     },
     {
       title: 'Line FollowerBot',
-      description: 'Multi-drone coordination system for collaborative missions using swarm intelligence algorithms.',
+      //description: 'Multi-drone coordination system for collaborative missions using swarm intelligence algorithms.',
+        description: 'PrintSecure is a smart biometric locking system powered by Arduino for secure, keyless access through fingerprint authentication. By combining IoT innovation with advanced security, it provides a fast, reliable, and tamper-resistant alternative to traditional locks. Designed for modern safety needs, it ensures both convenience and protection.',
       image: ImageLF,
       tags: ['Swarm Robotics', 'Machine Learning', 'Coordination'],
       status: 'Completed',
@@ -103,7 +113,8 @@ const Projects = () => {
     },
     {
       title: 'GuidAR',
-      description: 'GuidAR is a smart belt for the visually impaired, using ESP32 and two angled ultrasonic sensors—one for front obstacles, the other for ground hazards like potholes, stones, and stairs. An internal algorithm detects obstacle type and sends movement instructions (left, right, stop) via Telegram. A notification reader app reads these messages aloud on the user’s phone, working best with earphones or AirPods.',
+      //description: 'GuidAR is a smart belt for the visually impaired, using ESP32 and two angled ultrasonic sensors—one for front obstacles, the other for ground hazards like potholes, stones, and stairs. An internal algorithm detects obstacle type and sends movement instructions (left, right, stop) via Telegram. A notification reader app reads these messages aloud on the user’s phone, working best with earphones or AirPods.',
+      description:'GuidAR is a smart assistive belt for the visually impaired, built with ESP32 and ultrasonic sensors to detect both front obstacles and ground hazards. Its intelligent algorithm identifies obstacle types and provides movement instructions (left, right, stop) via Telegram. Paired with a notification reader app, it ensures real-time audio guidance for safe and independent navigation.',
       image: ImageGuidar,
       tags: ['Emergency Response', 'Medical', 'Search & Rescue'],
       status: 'In Progress',
@@ -115,7 +126,8 @@ const Projects = () => {
     },
     {
       title: 'NeoAttend',
-      description: 'An AI-powered face attendance system designed to automate and streamline identity verification using facial recognition. The system supports multiple modes, including real-time live detection and batch photo upload, ensuring accurate, flexible, and secure attendance tracking in academic or organizational settings.',
+      //description: 'An AI-powered face attendance system designed to automate and streamline identity verification using facial recognition. The system supports multiple modes, including real-time live detection and batch photo upload, ensuring accurate, flexible, and secure attendance tracking in academic or organizational settings.',
+      description: 'NeoAttend is an AI-powered face attendance system that automates identity verification through advanced facial recognition. Supporting both real-time live detection and batch photo upload, it ensures accurate, secure, and flexible attendance tracking. Designed for academic and organizational use, it enhances efficiency while reducing manual effort.',
       image: ImageNeo,
       tags: ['Photogrammetry', '3D Mapping', 'Computer Vision'],
       status: 'Planning',
