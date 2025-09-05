@@ -179,7 +179,7 @@ const Teams = () => {
       name: 'Ashish Pathak',
       position: 'Lead Sponsorship',
       branch:'Electronics and Communication Engineering',
-      image: '/third-year/AshishPathak.jpg',
+      image: '/third-year/AshishPathak.png',
       linkedin: 'https://www.linkedin.com/in/ashish-kumar-pathak-7a9104283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
