@@ -18,21 +18,21 @@ const Teams = () => {
       name: 'Vijit Bhadana',
       position: 'President',
       branch:'Computer Science Engineering',
-      image: '/final-year/VijitBhadana.png',
+      image: '/final-year/VijitBhadana.jpg',
       linkedin: '#',
     },
     {
       name: 'Ujjwal Kumar',
       position: 'Vice-President',
       branch:'Electrical Engineering',
-      image: '/final-year/UjjwalKumar.png',
+      image: '/final-year/UjjwalKumar.jpg',
       linkedin: 'https://www.linkedin.com/in/ujjwal-kumar-3446a325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
       name: 'Ayush Kannojia',
       position: 'Vice-President',
       branch:'Computer Science Engineering',
-      image: '/final-year/AyushKannojia.jpeg',
+      image: '/final-year/AyushKannojia.jpg',
       linkedin: 'https://www.linkedin.com/in/ayush-kannojia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
@@ -53,14 +53,14 @@ const Teams = () => {
       name: 'Vishal Singh',
       position: 'Treauserer',
       branch:'Electronics and Communication Engineering',
-      image: '/final-year/VishalSingh.png',
+      image: '/final-year/VishalSingh.jpg',
       linkedin: 'https://www.linkedin.com/in/vishal-singh-53139225b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
       name: 'Khushi Dubey',
       position: 'Social Media Head',
       branch:'Chemical Engineering',
-      image: '/final-year/KhushiDubey.png',
+      image: '/final-year/KhushiDubey.jpg',
       linkedin: 'https://www.linkedin.com/in/khushi-dubey-8a57732ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
@@ -74,14 +74,14 @@ const Teams = () => {
       name: 'Shreya Pandey',
       position: 'Sponsorship Head',
       branch:'Mechanical Engineering',
-      image: '/final-year/ShreyaPandey.png',
+      image: '/final-year/ShreyaPandey.jpg',
       linkedin: 'https://www.linkedin.com/in/shreya-pandey-040709272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
       name: 'Amisha',
       position: 'Event Head',
       branch:'Chemical Engineering',
-      image: '/final-year/Amisha.png',
+      image: '/final-year/Amisha.jpg',
       linkedin: '#',
     },];
   const third_year=[   {
