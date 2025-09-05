@@ -107,37 +107,7 @@ const Home = () => {
       </section>
 
 {/* 3D Drone Model Section */}
-     <section className="py-20 bg-background-secondary">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-foreground">
-            Interactive Drone Model
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Experience our cutting-edge drone technology in 3D. Watch as our virtual drone 
-            demonstrates the precision and innovation that drives our club forward.
-          </p>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
-        >
-          <div className="w-full h-[400px] bg-background-secondary rounded-xl overflow-hidden">
-            <DroneModel3D />
-          </div>
-        </motion.div>
-      </div>
-    </section>
+  
 
       {/* Areas of Work */}
       <section className="py-20 bg-background">
