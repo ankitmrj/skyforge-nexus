@@ -22,13 +22,7 @@ const Home = () => {
 
   // ✅ Event Carousel Data
   const eventDays = [
-    {
-      day: "Day 1",
-      title: "Inauguration Ceremony",
-      description:
-        "The grand opening of SwiftWings 2025 featuring keynote speeches, drone showcases, and an inspiring start to the event.",
-      image: event1,
-    },
+
     {
       day: "Day 2",
       title: "Assembly & Preparation",
