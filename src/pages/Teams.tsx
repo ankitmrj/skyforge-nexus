@@ -285,7 +285,7 @@ const second_year=[   {
       name: 'Rasshi Ashish Srivastav',
       image: 'second-year/Rasshi2.jpg',
       branch:'Information Technology',
-      linkedin:'#',
+      linkedin:'https://www.linkedin.com/in/rasshi-ashish-srivastav-b6766b37b/',
       // linkedin: 'https://www.linkedin.com/in/rasshi-ashish-srivastav-055a812a1',
     },
     {
